@@ -11,19 +11,19 @@ export default function LandingPage() {
         <img
           src={phoneAndDesktopImage}
           alt=""
-          className=" flex-grow w-[396px] h-[370px] xl:max-w-xl rounded-3xl"
+          className=" flex-grow w-[396px] h-[370px] 2xl:w-[700px] 2xl:h-[600px] rounded-3xl"
         />
-        <div className="flex flex-col gap-5">
-          <img src={GoLogo} className="w-96 h-90" />
-          <h1 className="text-stone-100 font-bold text-3xl italic text-center">
+        <div className="flex flex-col gap-5 2xl:gap-10">
+          <img src={GoLogo} className="w-96 h-90 2xl:w-[700px]" />
+          <h1 className="text-stone-100 font-bold text-3xl italic text-center 2xl:text-5xl">
             MOBILE APP
           </h1>
-          <p className="text-stone-100 font-semibold text-lg text-center">
+          <p className="text-stone-100 font-semibold text-lg text-center 2xl:text-4xl">
             Get the App
           </p>
-          <div className="flex flex-row gap-5">
-            <img src={PlayStoreLogo} alt="" className=" w-48" />
-            <img src={AppleStoreLogo} alt="" className=" w-48" />
+          <div className="flex flex-row gap-5 justify-center">
+            <img src={PlayStoreLogo} alt="" className=" w-48 2xl:w-72" />
+            <img src={AppleStoreLogo} alt="" className=" w-48 2xl:w-72" />
           </div>
         </div>
       </div>
