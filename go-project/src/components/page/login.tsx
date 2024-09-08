@@ -40,7 +40,7 @@ export default function Login() {
             <label className="text-stone-100">Remember</label>
             </div>
 
-            <a className="text-stone-100">Lost Password?</a>
+            <a href="/login" className="text-stone-100 cursor-pointer">Lost Password?</a>
         </div>
         <Button className="w-52 rounded-3xl" variant="destructive">Log into your account</Button>
     </form>
