@@ -40,6 +40,8 @@ Archives
             </a>
         </li>
     </ul>
+    <div className="flex flex-col py-3 mx-5 justify-center items-center bg-[#D2D2D2] text-white cursor-pointer hover:bg-green-500 rounded-lg mt-16">
+        <span><FaUserFriends/></span>New Communities</div>
     </div>
   )
 }
