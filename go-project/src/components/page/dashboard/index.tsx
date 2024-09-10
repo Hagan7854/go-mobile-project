@@ -1,12 +1,11 @@
-import SideBar from "../side-nav";
+import Navbar from "../navbar";
 
 export default function Dashboard() {
-    return <div className="flex">
-        <div>
-            <SideBar/>
+  return (
+    <div className="">
+      <div>
+       <Navbar/>
         </div>
-        <div>
-        Dashboard
-        </div>
-        </div>
+    </div>
+  );
 }

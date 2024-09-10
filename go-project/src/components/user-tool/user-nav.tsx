@@ -22,7 +22,7 @@ export default function UserNav() {
         </li>
         <li>
           <Link
-            to="/dashboard"
+            to="/communities"
             className="font-medium text-lg text-white cursor-pointer 2xl:text-2xl"
           >
             Communities

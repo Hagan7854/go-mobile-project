@@ -1,4 +1,4 @@
-import Dashboard from "@/components/page/dashboard";
+import Communities from "@/components/page/communities";
 import LandingPage from "@/components/page/landing-page";
 import Login from "@/components/page/login";
 import { createBrowserRouter } from "react-router-dom";
@@ -13,6 +13,6 @@ export const rootRoutes = createBrowserRouter([
         path: '/login', element: <Login/>
     },
     {
-        path: '/dashboard', element: <Dashboard/>
+        path: '/communities', element: <Communities/>
     }
 ])
