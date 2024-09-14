@@ -1,4 +1,5 @@
-import Community from "../communities/index"
+import { Outlet } from "react-router-dom"
+// import Community from "../communities/index"
 
 const MyCommunities = () => {
   return (
@@ -7,7 +8,7 @@ const MyCommunities = () => {
       <h1>
         My Communities
       </h1>
-      <Community/>
+      <Outlet/>
       </div>
       
     </div>

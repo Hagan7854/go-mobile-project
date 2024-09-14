@@ -1,5 +1,6 @@
 import { GoLogo, ProfilePic } from "@/assets/icons";
 import { FaArchive, FaMailBulk, FaUser, FaUserFriends } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -16,28 +17,28 @@ const SideBar = () => {
       </div>
       <ul className="mt-6 mx-5">
         <li className="mb-2 rounded hover:bg-green-500 py-2 pl-4 hover:text-white">
-          <a href="">
+          <Link to="community">
             <FaUserFriends className="w-6 h-6 inline-block mr-2 -mt-2" />
             Communities
-          </a>
+          </Link>
         </li>
         <li className="mb-2 rounded hover:bg-green-500 py-2 pl-4 hover:text-white">
-          <a href="">
+          <Link to="members">
             <FaUser className="w-4 h-4 inline-block mr-2 -mt-2" />
             Members
-          </a>
+          </Link>
         </li>
         <li className="mb-2 rounded hover:bg-green-500 py-2 pl-4 hover:text-white">
-          <a href="">
+          <Link to="messages">
             <FaMailBulk className="w-4 h-4 inline-block mr-2 -mt-2" />
             Messages
-          </a>
+          </Link>
         </li>
         <li className="mb-2 rounded hover:bg-green-500 py-2 pl-4 hover:text-white">
-          <a href="">
+          <Link to="archives">
             <FaArchive className="w-4 h-4 inline-block mr-2 -mt-2" />
             Archives
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="flex flex-col py-3 mx-5 justify-center items-center bg-[#D2D2D2] text-white cursor-pointer hover:bg-green-500 rounded-lg mt-16">
