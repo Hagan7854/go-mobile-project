@@ -1,14 +1,16 @@
-import { GoLogo, ProfilePic } from "@/assets/icons";
-import { FaArchive, FaMailBulk, FaUser, FaUserFriends } from "react-icons/fa";
+import { ProfilePic } from "@/assets/icons";
+import { useSidebar } from "@/sidebarcontext";
+import { FaArchive, FaMailBulk, FaUser, FaUserFriends, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
+  const { toggle } = useSidebar();
+
   return (
-    <div className="w-64 bg-white fixed h-full">
-      <div className="bg-green-500 h-16 flex justify-center items-center ">
-        <img src={GoLogo} alt="logo" className="w-32" />
-      </div>
-      <div className="flex flex-row gap-2 items-center">
+    <div  >
+      
+      <div className={`${toggle? "hidden": "block"} w-64 bg-white fixed h-full`}>
+      <div className="flex flex-row gap-2 items-center" >
         <img src={ProfilePic} alt="profile pic" className="w-[3rem]" />
         <div>
           <p className="font-medium">Ken Cann</p>
@@ -43,10 +45,12 @@ const SideBar = () => {
       </ul>
       <div className="flex flex-col py-3 mx-5 justify-center items-center bg-[#D2D2D2] text-white cursor-pointer hover:bg-green-500 rounded-lg mt-16">
         <span>
-          <FaUserFriends />
+          <FaUsers />
         </span>
         New Communities
       </div>
+      </div>
+      
     </div>
   );
 };
