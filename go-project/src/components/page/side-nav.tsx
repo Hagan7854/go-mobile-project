@@ -1,6 +1,6 @@
 import { ProfilePic } from "@/assets/icons";
 import { useSidebar } from "@/sidebarcontext";
-import { FaArchive, FaMailBulk, FaUser, FaUserFriends, FaUsers } from "react-icons/fa";
+import { FaArchive, FaMailBulk, FaUser, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
@@ -20,7 +20,7 @@ const SideBar = () => {
       <ul className="mt-6 mx-5">
         <li className="mb-2 rounded hover:bg-green-500 py-2 pl-4 hover:text-white">
           <Link to="community">
-            <FaUserFriends className="w-6 h-6 inline-block mr-2 -mt-2" />
+            <FaUsers className="w-6 h-6 inline-block mr-2 -mt-2" />
             Communities
           </Link>
         </li>
