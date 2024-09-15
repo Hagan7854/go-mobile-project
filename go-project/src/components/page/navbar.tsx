@@ -10,7 +10,7 @@ const Navbar = () => {
   return ( 
     <>
 
-<nav className="flex justify-between ml-64 h-16  items-center">
+<nav className="flex justify-between h-16  items-center">
       <div className="flex items-center flex-row gap-2">
         <Icon name="Menu" color="green" className="cursor-pointer" onClick={sidebarToggle} />
         <div className="flex flex-row items-center gap-2 bg-[#F8F8F8] py-1 px-3 rounded-2xl">

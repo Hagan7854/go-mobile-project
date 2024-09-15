@@ -6,7 +6,7 @@ const Communities = () => {
   return (
     <div className="flex">
       <div>
-      <div className="bg-green-500 h-16 w-64 flex justify-center items-center ">
+      <div className="navbar bg-green-500 h-16 w-64 flex justify-center items-center ">
         <img src={GoLogo} alt="logo" className="w-32" />
       </div>
         <SideBar />

@@ -1,5 +1,6 @@
 @import "./styles/landing-page.css";
 @import "./styles/login.css";
+@import "./styles/navbar.css";
 
 @tailwind base;
 @tailwind components;

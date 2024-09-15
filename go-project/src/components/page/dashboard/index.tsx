@@ -6,7 +6,7 @@ export default function Dashboard() {
   const { toggle} = useSidebar();
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="navbar bg-white">
        <Navbar/>
         </div>
         <div className={`${toggle? "-ml-64": ""}`}>
